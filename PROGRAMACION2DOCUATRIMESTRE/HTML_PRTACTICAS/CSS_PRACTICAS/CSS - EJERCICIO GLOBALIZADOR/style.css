@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #020000;
+}
+
+a:hover {
+    color: #ff0404;
+}
+
+/* Cabecera */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080202;
+    padding: 15px;
+    color: white;
+}
+
+.site-header a:hover{
+color: rgb(211, 18, 4);
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #d80f01;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contenido Principal */
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+
+.articles {
+    flex: 3;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.article .date {
+    color: #999;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comments button {
+    padding: 10px;
+    background-color: #e90909;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Barra Lateral */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.categories, .recent-posts, .social-media {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories ul, .recent-posts ul, .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li, .recent-posts li, .social-media li {
+    margin-bottom: 10px;
+}
+
+/* Pie de Página */
+.site-footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

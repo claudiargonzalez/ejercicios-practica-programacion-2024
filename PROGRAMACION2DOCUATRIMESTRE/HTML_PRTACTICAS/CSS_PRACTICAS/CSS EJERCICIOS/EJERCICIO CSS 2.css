@@ -1,0 +1,21 @@
+/* Estilo para el div */
+.caja {
+    width: 300px;
+    /* Ancho del div */
+    padding: 20px;
+    /* Espacio interno dentro del div */
+    border: 5px solid black;
+    /* Borde sólido de 5px */
+    margin: 10px;
+    /* Margen externo */
+    box-sizing: border-box;
+    /* Incluye padding y border en el cálculo del ancho total */
+}
+
+/* Estilo para el párrafo dentro del div */
+.caja p {
+    padding: 10px;
+    /* Espacio interno dentro del párrafo */
+    margin: 0;
+    /* Margen externo del párrafo, ajustado a 0 para evitar el margen por defecto */
+}

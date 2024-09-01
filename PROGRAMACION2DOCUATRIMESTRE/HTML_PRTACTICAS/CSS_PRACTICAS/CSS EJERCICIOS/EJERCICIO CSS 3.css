@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Estilo para el encabezado fijo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    /* Asegura que el encabezado esté encima de otros elementos */
+}
+
+/* Estilo para el pie de página fijo */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    /* Asegura que el pie de página esté encima de otros elementos */
+}
+
+/* Estilo para el contenedor central */
+.contenedor {
+    flex: 1;
+    display: flex;
+    margin: 60px 0;
+    /* Ajuste para el encabezado y pie de página fijos */
+}
+
+/* Estilo para la columna de navegación */
+.navegacion {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la columna de contenido */
+.contenido {
+    flex: 1;
+    padding: 15px;
+}

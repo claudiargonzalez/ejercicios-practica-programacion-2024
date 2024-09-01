@@ -1,0 +1,66 @@
+
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Encabezado, contenido principal, pie de página */
+    grid-template-columns: 200px 1fr 300px; /* Menú de navegación, contenido principal, barra lateral */
+    grid-template-areas:
+        "header header header"
+        "nav main sidebar"
+        "footer footer footer";
+    height: 100vh;
+}
+
+/* Estilo para el encabezado */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    grid-area: nav;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el área de contenido principal */
+main {
+    grid-area: main;
+    padding: 15px;
+}
+
+/* Estilo para la barra lateral */
+aside {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos adicionales para los enlaces */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
